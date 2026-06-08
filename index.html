@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saman Badara Herath — ICT Teacher & Educator</title>
+<meta name="description" content="Portfolio of Saman Badara Herath, an ICT teacher passionate about empowering students through technology, coding, and digital literacy." />
+<meta property="og:title" content="Saman Badara Herath — ICT Teacher" />
+<meta property="og:description" content="Portfolio of Saman Badara Herath, an ICT teacher passionate about empowering students through technology." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">SH</span>
+      <span class="logo-text">Saman Herath</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-bg" style="background-image:url('assets/circuit-bg.jpg')" aria-hidden="true"></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">ICT Teacher · Educator · Mentor</p>
+        <h1>Saman Badara <span class="accent">Herath</span></h1>
+        <p class="lede">Helping students discover the power of technology — one line of code, one classroom, one curious mind at a time.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#projects" class="btn btn-ghost">View projects →</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12+</strong><span>Years teaching</span></div>
+          <div><strong>1,500+</strong><span>Students mentored</span></div>
+          <div><strong>40+</strong><span>Workshops led</span></div>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="assets/saman-hero.jpg" alt="Saman Badara Herath, ICT teacher" width="1024" height="1280" />
+        <div class="portrait-glow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <div class="section-head">
+      <span class="tag">01 · About</span>
+      <h2>Teaching ICT with purpose</h2>
+    </div>
+    <div class="about-grid">
+      <p>I'm an ICT teacher based in Kandy, Sri Lanka, with over a decade of classroom experience guiding students from their first Scratch block to building real web applications. My approach mixes practical projects, computational thinking, and a healthy dose of curiosity.</p>
+      <p>Beyond the classroom, I run coding clubs, mentor students for national ICT competitions, and create open learning resources for teachers across the country.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <div class="section-head">
+      <span class="tag">02 · Skills</span>
+      <h2>What I teach &amp; build</h2>
+    </div>
+    <div class="skills-grid" id="skills-grid"></div>
+  </section>
+
+  <section id="experience" class="section reveal">
+    <div class="section-head">
+      <span class="tag">03 · Experience</span>
+      <h2>A timeline of teaching</h2>
+    </div>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <div class="section-head">
+      <span class="tag">04 · Projects</span>
+      <h2>Selected classroom projects</h2>
+    </div>
+    <div class="projects-grid" id="projects-grid"></div>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <div class="section-head">
+      <span class="tag">05 · Contact</span>
+      <h2>Let's collaborate</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Whether you're a student looking for guidance, a school planning a workshop, or a fellow educator — I'd love to hear from you.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:saman.herath@example.lk">saman.herath@example.lk</a></li>
+          <li><span>Location</span>Kandy, Sri Lanka</li>
+          <li><span>Available for</span>Workshops · Mentoring · Curriculum design</li>
+        </ul>
+      </div>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label><span>Your name</span><input required type="text" name="name" placeholder="Jane Doe" /></label>
+        <label><span>Email</span><input required type="email" name="email" placeholder="jane@school.lk" /></label>
+        <label><span>Message</span><textarea required name="message" rows="4" placeholder="Tell me a bit about your project or question…"></textarea></label>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Saman Badara Herath · Built with curiosity.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
